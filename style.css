@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+    background-color: rgba(33, 62, 134, 0.88);
+}
+
+#h h1 {
+    font-weight: 700;
+    color: #FFC83A;
+    font-size: 32px;
+    line-height: 38px;
+    line-height: 100%;
+    text-align: left;
+    vertical-align: top;
+    font-style: bold;
+    padding-top: 55px;
+    margin-left: auto;
+    text-align: center;
+}
+
+#game-board {
+    margin-left: auto;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 300px;
+    
+}
+
+@media only screen and (min-width: 350px) {
+    #game-board {
+        margin-left: 40px;
+    }
+
+    #reset {
+        margin-left: 30%;
+    }
+}
+
+@media only screen and (min-width: 450px) {
+    #game-board {
+        margin-left: 20%;
+    }
+
+    #reset {
+        margin-left: 38%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #game-board {
+        margin-left: 140px;
+    }
+
+    #reset {
+        margin-left: 38%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    #game-board {
+        margin-left: 30%;
+    }
+
+    #reset {
+        margin-left: 40%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    #game-board {
+        margin-left: 35%;
+    }
+
+    #reset {
+        margin-left: 43%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #game-board {
+        margin-left: 38%;
+    }
+
+    #reset {
+        margin-left: 44.5%;
+    }
+}
+
+
+#tile {
+    border: 3px solid #76D8EE;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#X {
+    color: #AEEE5D;
+}
+
+#O {
+    color: #61E7FA;
+}
+
+
+#reset {
+    background-color: #FFC83A;
+    margin-top: 20px;
+    text-align: center;
+    width: 145px;
+    height: 45px;
+    font-size: 24px;
+    font-style: bold;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    align-items: center;
+    vertical-align: top;
+}
+
